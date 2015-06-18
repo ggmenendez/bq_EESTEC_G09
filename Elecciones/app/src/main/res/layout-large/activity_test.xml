@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:paddingTop="20dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/questionbutton"
+        android:text="¿Qué opina del número actual de profesionales del sector público?"
+        android:id="@+id/txtQuestion"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#FAFAFA"
+        android:typeface="serif"
+        android:elevation="5dp"
+        android:elegantTextHeight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="21sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_weight="1"
+        android:background="@drawable/answer_button"
+        android:text="Existen demasiados. Además, sus tipos de contratos, en los que la posibilidad de ser despedido es muy baja, provoca que la mayoría de ellos no sean eficientes. Se deberían privatizar progresivamente las empresas de estos sectores."
+        android:onClick="onClick"
+        android:clickable="true"
+        android:id="@+id/txtAnswer1"
+        android:textColor="#1A237E"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:elegantTextHeight="false"
+        android:layout_below="@+id/txtQuestion"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:text="Creo que es el adecuado. No deben aumentarse haciendo públicas empresas energéticas o Bancos, por la posible corrupción que podría ocasionar. Pero tampoco han de reducirse, y menos privatizando sectores básicos como la Sanidad o la Educación."
+        android:onClick="onClick"
+        android:clickable="true"
+        android:background="@drawable/answer_button"
+        android:id="@+id/txtAnswer2"
+        android:textColor="#1A237E"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:elevation="5dp"
+        android:elegantTextHeight="true"
+        android:layout_below="@+id/txtAnswer1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:text="Habría que aumentar el número de empleados públicos. Nacionalizando empresas estratégicas y construyendo una Banca pública. Además, se debería restringir por Ley la privatización de la Sanidad, la Educación y el resto de derechos universales."
+        android:onClick="onClick"
+        android:clickable="true"
+        android:background="@drawable/answer_button"
+        android:id="@+id/txtAnswer3"
+        android:textColor="#1A237E"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:elevation="5dp"
+        android:elegantTextHeight="true"
+        android:layout_below="@+id/txtAnswer3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:text=""
+        android:onClick="onClick"
+        android:clickable="true"
+        android:background="@drawable/answer_button"
+        android:id="@+id/txtAnswer4"
+        android:textColor="#1A237E"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:elevation="5dp"
+        android:elegantTextHeight="true"
+        android:layout_below="@+id/txtAnswer3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_weight="0.48">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/pbTestProgress"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

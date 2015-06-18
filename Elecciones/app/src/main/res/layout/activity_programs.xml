@@ -1,0 +1,194 @@
+<android.support.v4.app.FragmentTabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+</android.support.v4.app.FragmentTabHost>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Quiere comprobar por usted mismo los programas de los partidos políticos que aparecen en esta aplicación? A continuación se los facilitamos"
+        android:id="@+id/textViewIntro"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partido Popular (PP)"
+        android:id="@+id/textViewPP"
+        android:layout_below="@+id/textViewIntro"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partido Socialista Obrero Español (PSOE)"
+        android:id="@+id/textViewPSOE"
+        android:layout_below="@+id/textViewPP"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Podemos"
+        android:id="@+id/textViewPodemos"
+        android:layout_below="@+id/textViewPSOE"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ciudadanos"
+        android:id="@+id/textViewCiudadanos"
+        android:layout_below="@+id/textViewPodemos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Izquierda Unida (IU)"
+        android:id="@+id/textViewIU"
+        android:layout_below="@+id/textViewCiudadanos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unión Progreso y Democracia (UPyD)"
+        android:id="@+id/textViewUPyD"
+        android:layout_below="@+id/textViewIU"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convergencia i Unió (CiU)"
+        android:id="@+id/textViewCiU"
+        android:layout_below="@+id/textViewUPyD"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partido Nacionalista Vasco (PNV)"
+        android:id="@+id/textViewPNV"
+        android:layout_below="@+id/textViewCiU"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amaiur"
+        android:id="@+id/textViewAmaiur"
+        android:layout_below="@+id/textViewPNV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esquerra Republicana de Catalunya (ERC)"
+        android:id="@+id/textViewERC"
+        android:layout_below="@+id/textViewAmaiur"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bloque Nacionalista Galego (BNG)"
+        android:id="@+id/textViewBNG"
+        android:layout_below="@+id/textViewERC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coalición Canaria-Nueva Canarias (CC-NCa-PNC)"
+        android:id="@+id/textViewCC"
+        android:layout_below="@+id/textViewBNG"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coalició Compromís-Equo (Compromís-Q)"
+        android:id="@+id/textViewCompromís"
+        android:layout_below="@+id/textViewCC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Foro de Ciudadanos (FAC)"
+        android:id="@+id/textViewFAC"
+        android:layout_below="@+id/textViewCompromís"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Geroa Bai (GBAI)"
+        android:id="@+id/textViewGBAI"
+        android:layout_below="@+id/textViewFAC"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Partido Animalista (PACMA)"
+        android:id="@+id/textViewPACMA"
+        android:layout_below="@+id/textViewGBAI"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewPACMA" />
+</RelativeLayout>
+-->

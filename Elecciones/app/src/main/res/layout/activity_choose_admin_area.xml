@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:id="@+id/resultMain"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/questionbutton"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+                android:alpha="1.0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_choose_admin_area"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:typeface="serif"
+                android:textSize="16dp"
+                android:textIsSelectable="true"
+                android:textColor="#FFFFFF"
+                />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_answer_normal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView7"
+            android:layout_above="@+id/btnGeolocation"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:text="@string/txt_choose_admin_area_option_one"
+            android:typeface="serif"
+            android:textColor="#212121"
+            android:layout_marginBottom="2dp"
+            android:textSize="16dp"
+            android:textIsSelectable="true"
+            android:layout_marginLeft="20dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="5dp"
+            android:id="@+id/imageView"
+            android:background="@drawable/imageseparator"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="86dp">
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_geolocation"
+                android:id="@+id/btnGeolocation"
+                android:background="@drawable/questionbutton"
+                android:onClick="geolocate"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/txt_choose_admin_area_option_two"
+            android:id="@+id/textView8"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="20dp"
+            android:typeface="serif"
+            android:textSize="16dp"
+            android:textIsSelectable="false"
+            android:layout_marginTop="30dp"
+            android:textColor="#212121" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="5dp"
+            android:id="@+id/imageView2"
+            android:background="@drawable/imageseparator"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="66dp">
+
+            <Spinner
+                android:layout_width="313dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:id="@+id/spnAdminAreas"
+                android:background="@drawable/button_answer_normal"
+                android:paddingLeft="10dp"
+                android:spinnerMode="dropdown"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:onClick="showResult"
+            android:id="@+id/btnShowResult"
+            android:layout_marginRight="41dp"
+            android:layout_marginEnd="41dp"
+            android:layout_above="@+id/adView"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/flecha"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

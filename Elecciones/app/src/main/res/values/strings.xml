@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Test Elecciones 2015</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="banner_ad_unit_id">ca-app-pub-7764481803384049/3705867817</string>
+    <string name="banner_choose_ad_unit_id">ca-app-pub-7764481803384049/6100931013</string>
+    <string name="banner_result_ad_unit_id">ca-app-pub-7764481803384049/3007863817</string>
+    <string name="banner_statistics_ad_unit_id">ca-app-pub-7764481803384049/1531130612</string>
+    <string name="btn_start">Comenzar</string>
+    <string name="btn_statistics">Estadísticas</string>
+    <string name="btn_programs">Programas</string>
+    <string name="btn_previous">Anterior</string>
+    <string name="btn_geolocation">Obtén mi ubicación</string>
+    <string name="btn_show_results">Continuar</string>
+
+    <string name="txt_choose_admin_area">Seleccione su Comunidad Autónoma:</string>
+    <string name="txt_choose_admin_area_option_automatic">Seleccione su Comunidad Autónoma:</string>
+    <string name="txt_choose_admin_area_option_one">A través de su ubicación:</string>
+    <string name="txt_choose_admin_area_option_two">O seleccionándola manualmente:</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="app_id">838786456201843</string>
+</resources>
